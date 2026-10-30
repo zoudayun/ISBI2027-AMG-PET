@@ -1,0 +1,9 @@
+Role: You are an expert in Neuroanatomy and Nuclear Medicine Physics (PET).
+Task: Please generate structured anatomical and physical descriptions for the provided list of brain regions (from AAL Atlas). Output Format: A JSON object where the key is the region name, and the value is a dictionary containing exactly three fields: "Location", "Shape", and "PET_Signal".
+Constraints: 1. Keep each field description SHORT (under 15 words). 2. Use precise medical terminology compatible with radiology reports. 
+Fields Definition: - "Location": Anatomical position (e.g., lobe, medial/lateral). - "Shape": Geometric morphology.- "PET_Signal": For ADNI-PET. State if it is high-uptake gray matter or low-uptake white matter.
+Example Input: "Frontal Pole" Example Output: "Frontal Pole": { "Location": "Anterior-most portion of the frontal lobes", "Shape": "Rounded cortical structure", "PET_Signal": "High radiotracer uptake typical of cortical gray matter" }
+Generate a detailed JSON file that describes the brain regions inthe Harvard-Oxford Atlas. For each brain region, include thefollowing fields: 
+1. "Location": A description of the region's position in the brain,referencing nearby structures or overall anatomical location.
+2. "Shape": A description of the geometric shape or contour ofthe region, such as whether it is rounded, elongated, or irregular.
+3. "PET Signal": A description of the radioactive concentration inthe region, referencing the intensity or distribution of the PETsignal (e.g., low, medium, high).
