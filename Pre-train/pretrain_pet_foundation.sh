@@ -5,7 +5,7 @@ cd
 
 echo "============== Pretraining starts =============="
 touch ~/wait1
-OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 CUDA_VISIBLE_DEVICES=  python launch.py \
+OMP_NUM_THREADS=  MKL_NUM_THREADS=  CUDA_VISIBLE_DEVICES=  python launch.py \
   --main_py_relpath main_pet_foundation_model.py \
   --exp_name "${EXP_NAME}" \
   --exp_dir "${EXP_DIR}" \
@@ -20,7 +20,7 @@ OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 CUDA_VISIBLE_DEVICES=  python launch.py \
   --bs=48 \
   --ep=200 \
   --wp_ep=10 \
-  --input_size=64 \
+  --input_size=96 \
   --dataloader_workers= \
   --base_lr=1e-4 \
   --wd=0.2 \
