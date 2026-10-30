@@ -42,7 +42,7 @@ def get_args():
         ("dropout", 0.2, float),
         ("num_classes", 3, int),
         ("gamma", 0, float),
-        ("alpha", "0.83,1.09,1.14", str),
+        ("alpha", "", str),
         ("input_size_x", 128, int),
         ("input_size_y", 128, int),
         ("input_size_z", 128, int),
